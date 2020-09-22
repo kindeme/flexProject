@@ -266,7 +266,7 @@ About
 	.about-img {
 		position: relative;
 	}
-	/* to put the before in normal flow we plce about photo in position relative instead of before z-index:-1 */
+	/* to put the before in normal flow we place about photo in position relative instead of before z-index:-1 */
 	.about-photo{
 		position:relative;
 	}
