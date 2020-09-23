@@ -364,9 +364,23 @@ Featured Tours
 .tour-info {
 	padding: 1.25rem 1.5rem;
 }
+/* extra css */
+.tour-title {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.tour-title p,
+.tour-title h4 {
+	margin-bottom: 0.75rem;
+	line-height: 1.25;
+}
+.tour-title p {
+	color: var(--clr-grey-7);
+}
 .tour-footer {
 	display: flex;
-	justify-content: space space-between;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
 }
@@ -390,7 +404,6 @@ Featured Tours
 	}
 }
 @media screen and (min-width: 1170px) {
-
 	.tour-card {
 		flex: 0 0 calc(33.33% - 2rem);
 	}
