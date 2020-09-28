@@ -203,6 +203,7 @@ Navbar
 	color: var(--clr-primary-5);
 	cursor: pointer;
 	transition: var(--transition);
+	outline: none;
 }
 .nav-toggle:hover {
 	transform: scale(1.2);
@@ -230,6 +231,47 @@ Navbar
 }
 .show-links {
 	height: 280px;
+}
+@media screen and (min-width: 992px) {
+	/* hide toggle button */
+	.nav-toggle {
+		display: none;
+	}
+	.nav-center {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		/* optional */
+		flex-wrap: wrap;
+	}
+	.nav-links {
+		height: auto;
+		display: flex;
+	}
+	.nav-header {
+		padding: 0 0;
+	}
+	.nav-link {
+		padding: 0 0;
+		margin-right: 0.7rem;
+	}
+	.nav-link:hover {
+		padding: 0;
+		color: var(--clr-primary-5);
+		background: transparent;
+	}
+	.nav-icons {
+		display: flex;
+	}
+	.nav-icon {
+		margin-right: 0.7rem;
+		color: var(--clr-primary-5);
+		font-size: 1.2rem;
+		transition: var(--transition);
+	}
+	.nav-icon:hover {
+		color: var(--clr-primary-8);
+	}
 }
 /*
 =============== 
